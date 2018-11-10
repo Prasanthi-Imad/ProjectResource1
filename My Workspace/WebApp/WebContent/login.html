@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Login </title>
+<script type="text/javascript" >
+
+function fun1(){
+	var uname= document.getElementById("uid").value;
+	var password= document.getElementById("pid").value;
+	
+}
+
+
+</script>
+
+</head>
+<body background="Desert.jpg">
+
+<form style="font-style: italic ;" onsubmit="fun1()" action="www.google.com" method="get">
+
+<table >
+
+<tr><td>USER NAME<span style= "color: red"> * </span><td/> 
+<td> <input type="text" id="uid" name="uname " title="name is mandatory" required="required"/><td/><tr/>
+
+
+<tr><td>PASSWORD<td/><td><input type="password" id="pid" name="pwd" title="should contain min 3 and max 12" 
+											required="required" pattern="{A-Za-z}{3,15}" /><td/><tr/>
+
+
+<tr><td><label style="background-color:teal;">MOBILE NO.</label><td/> <td> 
+<input type="text" name="mno" title="should start with 7 & contain 10 digits" 
+		required="required" pattern="{7}{0-9}{9}"/><td/><tr/>
+
+
+<tr><td><label> DOB </label><td/><td> <input type="date" id="dobid" name="date" /> <td/> <tr/>
+
+
+<tr><td>PRICE <td/> <td> <input type="range"  /> <td/> <tr/>
+
+
+<tr><td>EMAIL ID <td/> <td> <input type="email" readonly="readonly" /> <td/> <tr/>
+
+
+<tr><td> GENDER </td><td> 
+<input type="radio" name="gender" value ="male"/>Male </td>
+<td> <input type="radio" name="gender" value ="female"/>Female </td></tr>
+
+
+<tr><td>COURSE </td><td><input type="checkbox" name="java"/>Java</td>
+<td><input type="checkbox" name="oracle" />Oracle</td>
+<td><input type="checkbox"  name=".net" />.Net</td><tr/>
+
+
+<tr><td>CITY  <td/><td><select name="city"> 
+	<option value="not slected">--Select--</option>
+	<option value="hyd">HYDERABAD</option>
+	<option value="chennai">CHENNAI</option>
+	<option value="pune">PUNE</option>
+
+
+</select>
+</td></tr>
+<tr><td>UPLOAD FILE </td><td><input type="file" value="Upload" /></td></tr>
+
+
+
+<tr><td><input type="submit" value="Login" onclick="fun1()" /></td><td><input type="reset" value="Reset"/><td/> <tr/>
+
+
+</table>
+</form>
+</body>
+</html>
